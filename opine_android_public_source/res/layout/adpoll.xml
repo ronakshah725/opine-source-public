@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrlad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dip" >
+
+        <RelativeLayout
+            android:id="@+id/layadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:background="@color/xwhite" >
+
+            <TextView
+                android:id="@+id/nadops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/xwhite" />
+
+            <EditText
+                android:id="@+id/pollq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nadops"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dip"
+                android:layout_marginTop="16dp"
+                android:hint="Poll Question"
+                android:inputType="text" />
+
+            <TableLayout
+                android:id="@+id/tblay"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/pollq"
+                android:layout_centerHorizontal="true" >
+            </TableLayout>
+
+            <Button
+                android:id="@+id/addop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tblay"
+                android:layout_marginTop="15dip"
+                android:text="Add Option" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lokc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="100dip"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/cncl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Cancel" >
+        </Button>
+
+        <Button
+            android:id="@+id/crt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Create" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

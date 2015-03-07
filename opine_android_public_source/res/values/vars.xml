@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fR_TB">15dip</dimen>
+    <dimen name="fR_LR">30dip</dimen>
+    <dimen name="fQ_P">4dip</dimen>
+</resources>

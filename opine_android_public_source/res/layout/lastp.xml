@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/secAct2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="30dip" >
+
+                <CheckBox
+                    android:id="@+id/decl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/submitAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="Submit Responses" />
+
+                <TextView
+                    android:id="@+id/lp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.\nThank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.\nThank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.\nThank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.\nThank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet.Thank you for your valuable responses!\n On submitting, you will not be able to changes your responses.\nYou responses will be uploaded when your device is connected to the internet."
+                    android:textColor="@color/white" >
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/secAct1"
+        android:layout_width="match_parent"
+        android:layout_height="25dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@color/orange_d" >
+
+        <TextView
+            android:id="@+id/cn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:text="cn"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/si1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dip"
+            android:text="si"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

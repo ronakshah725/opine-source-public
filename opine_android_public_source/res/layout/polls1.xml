@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/tabtoggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/cats"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_weight="0.5"
+            android:background="@color/orange_d"
+            android:text="All Polls"
+            android:textColor="@color/xwhite" />
+
+        <Button
+            android:id="@+id/myp"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_weight="0.5"
+            android:background="@color/xwhite"
+            android:text="My Polls"
+            android:textColor="@color/orange_d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fpolls1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabtoggle" >
+    </LinearLayout>
+
+</RelativeLayout>

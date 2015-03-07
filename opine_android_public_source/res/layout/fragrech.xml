@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frrech"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xwhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/currbals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:background="@color/textGray"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/canRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Account Balance is "
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rs1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/rupesym1"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/ic_rs" />
+
+            <TextView
+                android:id="@+id/ressbal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rupesym1"
+                android:paddingLeft="6dip"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ramt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currbals"
+        android:layout_marginLeft="10dip"
+        android:text="Recharge Amount"
+        android:textColor="@color/textGray" />
+
+    <LinearLayout
+        android:id="@+id/hs1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/ramt"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/horsep" />
+
+    <RelativeLayout
+        android:id="@+id/relrech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hs1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_toRightOf="@+id/ramt" >
+
+        <Button
+            android:id="@+id/dwnBtn"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ramt"
+            android:padding="3dip"
+            android:text="-"
+            android:textSize="30sp" >
+        </Button>
+
+        <EditText
+            android:id="@+id/amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dwnBtn"
+            android:maxLines="1"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/upBtn"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/amt"
+            android:padding="3dip"
+            android:text="+"
+            android:textSize="30sp" >
+        </Button>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relrech"
+        android:layout_marginLeft="10dip"
+        android:text="Service Provider"
+        android:textColor="@color/textGray" />
+
+    <LinearLayout
+        android:id="@+id/hs2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/sp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/horsep" />
+
+    <RelativeLayout
+        android:id="@+id/relR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hs2"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/Choiceoper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Choice List" >
+        </Button>
+
+        <TextView
+            android:id="@+id/selectOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toLeftOf="@+id/Choiceoper"
+            android:text="" >
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relR"
+        android:layout_marginLeft="10dip"
+        android:text="Phone Number"
+        android:textColor="@color/textGray" />
+
+    <LinearLayout
+        android:id="@+id/hs3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/pn"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/horsep" />
+
+    <RelativeLayout
+        android:id="@+id/relR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hs3"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxLength="10"
+            android:text="+91" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/phno"
+            android:layout_width="200dip"
+            android:layout_height="40dip"
+            android:layout_toRightOf="@+id/st"
+            android:text="" >
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

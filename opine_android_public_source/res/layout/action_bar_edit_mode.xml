@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal"
+    android:gravity="left" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradnt" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/imageView1"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="6dip"
+        android:background="@drawable/ic_action_face" 
+        android:orientation="vertical"/>
+
+    <com.actionbarsherlock.internal.widget.IcsSpinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView1"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/slt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/spinner"
+        android:text="0"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip" >
+
+        <ImageButton
+            android:id="@+id/sort_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sort" />
+
+        <ImageButton
+            android:id="@+id/srch_btn"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/sort_btn"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/srchQue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_marginBottom="4dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="45dip"
+        android:layout_marginTop="4dip"
+        android:focusable="true"
+        android:hint="@string/searchHint"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip" >
+
+        <Button
+            android:id="@+id/redm"
+            android:layout_width="35dip"
+            android:layout_height="25dip"
+            android:layout_alignBottom="@+id/vsrch"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/redeem" />
+
+        <Button
+            android:id="@+id/vsrch"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/redm"
+            android:background="@drawable/search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip" >
+
+        <Button
+            android:id="@+id/rechr"
+            android:layout_width="35dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/redeem" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/addp"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/addp" 
+            android:orientation="vertical"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scope" translatable="false">oauth2:https://www.googleapis.com/auth/userinfo.profile</string>
+   <!--  <string name="usrReg">http://www.acjs.co/opInEtemp/lusoRg.php</string> -->
+    <string name="upld"> http://www.acjs.co/opInEtemp/uPRestoTab.php</string>
+    <string name="acctok">https://www.googleapis.com/oauth2/v1/userinfo?access_token=</string>
+    <string name="voucReq">http://www.acjs.co/opInEtemp/uPVoucReq.php</string>
+    <string name="rechReq">http://www.acjs.co/opInEtemp/uPRechReq.php</string>
+    <string name="initdata">http://www.acjs.co/opInEtemp/initdata.php</string>
+    <string name="projno">821835437558</string>
+    <!--  <string name="apikey">AIzaSyAHDdWrumEjF-bxxpq5dIpxoeougnIpzuQ</string>-->
+    <string name="voucpics">/voucpics</string>
+    <string name="tilepics">/tilepics</string>
+    <string name="picextjpg">.jpg</string>
+    <string name="urltodl">http://www.acjs.co/opInEtemp/SurvImages/</string>
+    <string name="urltodl1">http://www.acjs.co/opInEtemp/VoucImages/</string>
+    <string name="opineimages">/OpineData/Images</string>
+    <string name="fact">10</string>
+    <string name="initvouc">http://www.acjs.co/opInEtemp/initVouc.php</string>
+    <string name="upsp">http://www.acjs.co/opInEtemp/uPsubspl.php</string>
+    <string name="upnp">http://www.acjs.co/opInEtemp/uPnPoll.php</string>
+    <string name="dlQues">http://www.acjs.co/opInEtemp/dlQues.php</string>
+    <string name="dlOps">http://www.acjs.co/opInEtemp/dlOPs.php</string>
+    <string name="upOR">http://www.acjs.co/opInEtemp/pagal/upkl.php</string>
+    <string name="upSPM">http://www.acjs.co/opInEtemp/upspm.php</string>
+    <string name="updp">http://www.acjs.co/opInEtemp/updp.php</string>
+    <string name="upsd">http://www.acjs.co/opInEtemp/upsd.php</string>   
+</resources>

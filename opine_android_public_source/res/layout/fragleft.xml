@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:id="@+id/fragl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+         android:background="#252525">
+      <!--  android:background="#57554F" --> 
+
+
+        <!--
+       	android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="60dip"
+        -->
+
+        <RelativeLayout
+            android:id="@+id/lpts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" >
+
+            <ImageView
+                android:id="@+id/ipts"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/trophy" />
+
+            <TextView
+                android:id="@+id/pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/ipts"
+                android:textColor="@color/orange_d"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/ptsl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/pts"
+                android:text="pts."
+                android:textColor="@color/orange_d"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/callsurv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="#8f8c76"
+                android:paddingBottom="5dip" >
+
+                <ImageView
+                    android:id="@+id/isurv"
+                    android:layout_width="100dip"
+                    android:layout_height="60dip"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/survpic" />
+
+                <TextView
+                    android:id="@+id/tsurv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/isurv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dip"
+                    android:text="Surveys"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callpoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:background="#8f8c76"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dip" >
+
+                <ImageView
+                    android:id="@+id/ipoll"
+                    android:layout_width="100dip"
+                    android:layout_height="60dip"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/pollpic" />
+
+                <TextView
+                    android:id="@+id/tpoll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ipoll"
+                    android:layout_centerHorizontal="true"
+                    android:text="Polls"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/callred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="#8f8c76"
+                android:paddingBottom="5dip" >
+
+                <ImageView
+                    android:id="@+id/ivouc"
+                    android:layout_width="100dip"
+                    android:layout_height="60dip"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/voucher" />
+
+                <TextView
+                    android:id="@+id/tvouc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivouc"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dip"
+                    android:text="Vouchers"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callrec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@+id/lvouc"
+                android:background="#8f8c76"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dip" >
+
+                <ImageView
+                    android:id="@+id/irch"
+                    android:layout_width="100dip"
+                    android:layout_height="60dip"
+                    android:paddingTop="10dip"
+                    android:src="@drawable/mobile" />
+
+                <TextView
+                    android:id="@+id/trch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/irch"
+                    android:layout_centerHorizontal="true"
+                    android:text="Recharge"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/spl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick" >
+
+            <ImageView
+                android:id="@+id/ispl"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/spsurv" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/ispl"
+                android:text="Special Surveys"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/shr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ishr"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/ishr"
+                android:text="Share"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/logent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ilogent"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/logent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/ilogent"
+                android:text="User Log"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/abtus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iabtus"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/aboutus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/iabtus"
+                android:text="About Us"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/demog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/idemog"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/idemog"
+                android:text="Demographics"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ifaq"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/faq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/ifaq"
+                android:text="FAQ"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/legal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/ilegal"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/legal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/ilegal"
+                android:text="Legal"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="210dip"
+            android:layout_height="2dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="15dip"
+            android:background="#282828" />
+
+        <RelativeLayout
+            android:id="@+id/cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dip" >
+
+            <ImageView
+                android:id="@+id/icont"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/contactus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/icont"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="20dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
